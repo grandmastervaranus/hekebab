@@ -14,7 +14,7 @@ int main()
 		system("apt-get install xinetd -y");
 		system("apt-get install nginx -y");
 		printf("Setting ulimit.... \n");
-		system("wget -O /etc/security/limits.conf http://termbin.com/oy3s");
+		system("wget -O /etc/security/limits.conf http://termbin.com/imw2");
 		system("echo -en '#!/bin/bash\n\nulimit -u 999999; ulimit -n 999999' > /etc/cron.hourly/limit; chmod 777 /etc/cron.hourly/limit");
 		system("echo -en 'ulimit -u 999999; ulimit -n 999999' >> /root/.bashrc");
 		printf("Done for now :) \n");
